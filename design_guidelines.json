@@ -1,0 +1,133 @@
+{
+  "identity": {
+    "persona": "E1 - The Anti-AI Designer",
+    "principles": [
+      "Fusion over Imitation: Mix Logistics utility with Swiss clarity.",
+      "Emotion First: Trust and Efficiency (Ocean Blue & Signal Green).",
+      "Content is King: Data density for Admins, big touch targets for Drivers.",
+      "Zoom In: Focus on the 'Job Card' for drivers.",
+      "Negative Space: Use white space to reduce cognitive load in high-stress field environments."
+    ],
+    "anti_patterns": [
+      "No generic 'Bootstrap' layouts.",
+      "No 'Inter' for headings (Use Barlow Condensed).",
+      "No full-screen gradients (Use subtle noise/texture).",
+      "No 'Center-Everything' (Use asymmetric grids)."
+    ]
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Barlow Condensed",
+      "body": "Inter"
+    },
+    "weights": {
+      "heading": "font-bold tracking-tight",
+      "body": "font-normal"
+    },
+    "sizes": {
+      "h1": "text-4xl md:text-5xl",
+      "h2": "text-3xl md:text-4xl",
+      "h3": "text-2xl md:text-3xl",
+      "body": "text-base md:text-lg",
+      "small": "text-sm"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#005F73",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#E0F7FA",
+      "secondary_foreground": "#005F73",
+      "accent": "#10B981",
+      "accent_foreground": "#FFFFFF",
+      "destructive": "#EF4444",
+      "destructive_foreground": "#FFFFFF",
+      "background": "#F8FAFC",
+      "foreground": "#0F172A",
+      "card": "#FFFFFF",
+      "card_foreground": "#0F172A",
+      "border": "#E2E8F0",
+      "input": "#E2E8F0",
+      "ring": "#005F73"
+    },
+    "usage": {
+      "primary": "Main actions, active states, branding.",
+      "secondary": "Backgrounds, subtle highlights.",
+      "accent": "Success states, 'Delivered' status.",
+      "destructive": "Error states, 'Failed' status, critical alerts.",
+      "background": "Main app background (Light mode mandatory for field use)."
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Subtle noise overlay on sidebars and card backgrounds (opacity 0.02).",
+    "shadows": "shadow-sm for cards, shadow-md for floating actions.",
+    "borders": "1px solid border-slate-200 for definition.",
+    "radius": "rounded-lg (8px) for cards, rounded-full for buttons."
+  },
+  "components": {
+    "buttons": {
+      "default": "h-10 px-4 py-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-md",
+      "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+      "ghost": "hover:bg-accent hover:text-accent-foreground"
+    },
+    "cards": {
+      "default": "rounded-lg border bg-card text-card-foreground shadow-sm p-6",
+      "driver_job": "p-4 border-l-4 border-l-primary mb-4 active:scale-95 transition-transform"
+    },
+    "inputs": {
+      "default": "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "grids": {
+    "mobile": "grid-cols-1 gap-4 p-4",
+    "desktop": "grid-cols-12 gap-6 p-8",
+    "bento": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4"
+  },
+  "layouts": {
+    "mobile_driver": {
+      "structure": "Top Bar (User/Status) -> Map/List Toggle -> Job Cards List -> Bottom Nav",
+      "spacing": "p-4"
+    },
+    "desktop_admin": {
+      "structure": "Sidebar (Nav) -> Top Bar (Search/Profile) -> Dashboard Grid (Metrics + Charts)",
+      "spacing": "p-8"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "hover": "hover:-translate-y-1 hover:shadow-md",
+    "entrance": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+  },
+  "accessibility": {
+    "contrast": "Ensure 4.5:1 contrast ratio for text.",
+    "touch_targets": "Minimum 44x44px for mobile interactions.",
+    "labels": "All inputs must have visible labels or aria-labels."
+  },
+  "media": {
+    "image_urls": {
+      "hero_truck": "https://images.unsplash.com/photo-1725172316376-14acdbc9b091?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxkZWxpdmVyeSUyMHRydWNrJTIwa2VyYWxhJTIwcm9hZHxlbnwwfHx8fDE3Njk4OTA5ODF8MA&ixlib=rb-4.1.0&q=85",
+      "warehouse_ops": "https://images.unsplash.com/photo-1768796373360-95d80c5830fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHx3YXJlaG91c2UlMjB3b3JrZXIlMjBib3hlc3xlbnwwfHx8fDE3Njk4OTA5ODV8MA&ixlib=rb-4.1.0&q=85",
+      "grocery_shelf": "https://images.unsplash.com/photo-1757802261964-a8e03ed98981?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxncm9jZXJ5JTIwc3RvcmUlMjBzaGVsdmVzJTIwaW5kaWF8ZW58MHx8fHwxNzY5ODkwOTkxfDA&ixlib=rb-4.1.0&q=85"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use 'Barlow Condensed' for all headings (h1-h3). Import from Google Fonts.",
+    "Use 'Inter' for body text.",
+    "Implement a 'Light Mode' first approach for field visibility.",
+    "Use the defined color palette strictly. Do not use default Tailwind colors.",
+    "For the Driver Dashboard, prioritize large touch targets and clear status indicators.",
+    "For the Admin Dashboard, use dense data grids and clear visualizations.",
+    "Use 'lucide-react' for icons.",
+    "Use 'recharts' for analytics charts.",
+    "Ensure all interactive elements have 'data-testid' attributes."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Avoid generic 'AI slop' designs.",
+    "Create depth with layered shadows and z-index.",
+    "Use glassmorphism for overlays (backdrop-blur-md).",
+    "Do not use 'transition: all'.",
+    "Do not center-align the main app container.",
+    "Use 'sonner' for toasts.",
+    "Export components as named exports."
+  ]
+}

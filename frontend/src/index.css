@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 210 40% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 210 40% 98%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 174 100% 29%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 5% 15%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 64%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 5% 20%;
+    --input: 240 5% 20%;
+    --ring: 174 100% 29%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Leaflet Dark Theme Customization */
+.leaflet-container {
+  background: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #2d2d2d;
+  color: #e5e5e5;
+  border-radius: 8px;
+}
+
+.leaflet-popup-tip {
+  background: #2d2d2d;
+}
+
+.leaflet-control-zoom a {
+  background: #2d2d2d;
+  color: #e5e5e5;
+  border: 1px solid #404040;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #404040;
+}
+
+.leaflet-bar {
+  border: 1px solid #404040;
+}
+
+.leaflet-control-attribution {
+  background: rgba(45, 45, 45, 0.8);
+  color: #8a8a8a;
+}
